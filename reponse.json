@@ -1,0 +1,17 @@
+{
+    "participant": {
+        "email":"",
+        "firstname": "",
+        "lastname": "",
+        "dob": "YYYY-MM-DD"
+    },
+    "work": {
+        "companyname": "",
+        "salary": "123",
+        "currency": "USD"
+    },
+    "home": {
+        "country": "",
+        "city" : ""
+    }
+}
