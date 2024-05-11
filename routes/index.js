@@ -201,7 +201,7 @@ async function validateInput(participant){
   }
 
   if (!validateDOB(participant.dob)) {
-    return { error: 'Invalid date of birth format. Use YYYY/MM/DD' };
+    return { error: 'Invalid date of birth format. Use YYYY-MM-DD' };
   }
 
   if (!validateName(participant.work.companyname)) {
@@ -273,7 +273,7 @@ const validateName = (name) => {
 };
 
 const validateDOB = dob => {
-  const dobRegex = /^\d{4}\/\d{2}\/\d{2}$/;
+  const dobRegex = /^\d{4}\-\d{2}\-\d{2}$/;
   return dobRegex.test(dob);
 };
 
